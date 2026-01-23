@@ -48,6 +48,54 @@ class ModeMap(IntEnum):
     READY = 53
     LAP_TIMER_RESET = 54
 
+MODE_LABEL = {
+    0: 'ARM',
+    1: 'ANGLE',
+    2: 'HORIZON',
+    4: 'ANTI_GRAVITY',
+    5: 'MAG',
+    6: 'HEADFREE',
+    7: 'HEADADJ',
+    8: 'CAMSTAB',
+    12: 'PASSTHRU',
+    13: 'BEEPERON',
+    15: 'LEDLOW',
+    17: 'CALIB',
+    19: 'OSD',
+    20: 'TELEMETRY',
+    23: 'SERVO1',
+    24: 'SERVO2',
+    25: 'SERVO3',
+    26: 'BLACKBOX',
+    27: 'FAILSAFE',
+    28: 'AIRMODE',
+    29: '_3D',
+    30: 'FPV_ANGLE_MIX',
+    31: 'BLACKBOX_ERASE',
+    32: 'CAMERA_CONTROL_1',
+    33: 'CAMERA_CONTROL_2',
+    34: 'CAMERA_CONTROL_3',
+    35: 'FLIP_OVER_AFTER_CRASH',
+    36: 'BOXPREARM',
+    37: 'BEEP_GPS_SATELLITE_COUNT',
+    39: 'VTX_PIT_MODE',
+    40: 'USER1',
+    41: 'USER2',
+    42: 'USER3',
+    43: 'USER4',
+    44: 'PID_AUDIO',
+    45: 'PARALYZE',
+    46: 'GPS_RESCUE',
+    47: 'ACRO_TRAINER',
+    48: 'DISABLE_VTX_CONTROL',
+    49: 'LAUNCH_CONTROL',
+    50: 'MSP_OVERRIDE',
+    51: 'STICK_COMMANDS_DISABLE',
+    52: 'BEEPER_MUTE',
+    53: 'READY',
+    54: 'LAP_TIMER_RESET',
+}
+
 
 @dataclass
 class AuxMode:
@@ -95,7 +143,7 @@ def evaluate_modes(modes) -> str:
         ranges = get_bit_ranges(mode.min_, mode.max_, mode.bit_width)
 
         for range_ in ranges[mode.bit]:
-            aux += f'aux {idx} {int(mode.mode)} {mode.aux} {range_[0]} {range_[1]}\n'
+            aux += f'aux {idx} {int(mode.mode)} {mode.aux} {range_[0]} {range_[1]}  # {MODE_LABEL[mode.mode]}\n'
             idx += 1
 
     if idx > MAX_IDX:
