@@ -1,0 +1,18 @@
+Labels:
+  "Favorites":
+Sort: 1
+Models:
+  model2.yml:
+    hash: "482e0000355c1392"
+    name: "USB"
+    labels: ""
+    bitmap: "edgetx.png"
+    lastopen: 0
+  model1.yml:
+    hash: "a65b0000355cfbac"
+    name: "ELRS WIDE"
+    mod0type: 5
+    labels: ""
+    bitmap: "elrs.png"
+    lastopen: 1769028785
+
