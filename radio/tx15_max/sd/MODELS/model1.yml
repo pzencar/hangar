@@ -1143,23 +1143,23 @@ screenData:
                      0:
                         type: Source
                         value: 
-                           source: Rud
+                           source: tele(10)
                      1:
                         type: Color
                         value: 
-                           color: COLIDX1
+                           color: COLIDX33
                      2:
                         type: Bool
                         value: 
-                           boolValue: 0
+                           boolValue: 1
                      3:
                         type: Unsigned
                         value: 
-                           unsignedValue: 0
+                           unsignedValue: 1
                      4:
                         type: Unsigned
                         value: 
-                           unsignedValue: 0
+                           unsignedValue: 1
             2:
                widgetName: Value
                widgetData: 
@@ -1168,6 +1168,30 @@ screenData:
                         type: Source
                         value: 
                            source: tele(14)
+                     1:
+                        type: Color
+                        value: 
+                           color: COLIDX33
+                     2:
+                        type: Bool
+                        value: 
+                           boolValue: 1
+                     3:
+                        type: Unsigned
+                        value: 
+                           unsignedValue: 1
+                     4:
+                        type: Unsigned
+                        value: 
+                           unsignedValue: 1
+            3:
+               widgetName: Value
+               widgetData: 
+                  options: 
+                     0:
+                        type: Source
+                        value: 
+                           source: tele(20)
                      1:
                         type: Color
                         value: 
@@ -1208,6 +1232,30 @@ screenData:
                         type: Unsigned
                         value: 
                            unsignedValue: 1
+            5:
+               widgetName: Value
+               widgetData: 
+                  options: 
+                     0:
+                        type: Source
+                        value: 
+                           source: tele(17)
+                     1:
+                        type: Color
+                        value: 
+                           color: COLIDX33
+                     2:
+                        type: Bool
+                        value: 
+                           boolValue: 1
+                     3:
+                        type: Unsigned
+                        value: 
+                           unsignedValue: 1
+                     4:
+                        type: Unsigned
+                        value: 
+                           unsignedValue: 1
             6:
                widgetName: Value
                widgetData: 
@@ -1216,6 +1264,30 @@ screenData:
                         type: Source
                         value: 
                            source: tele(2)
+                     1:
+                        type: Color
+                        value: 
+                           color: COLIDX33
+                     2:
+                        type: Bool
+                        value: 
+                           boolValue: 1
+                     3:
+                        type: Unsigned
+                        value: 
+                           unsignedValue: 1
+                     4:
+                        type: Unsigned
+                        value: 
+                           unsignedValue: 1
+            7:
+               widgetName: Value
+               widgetData: 
+                  options: 
+                     0:
+                        type: Source
+                        value: 
+                           source: tele(16)
                      1:
                         type: Color
                         value: 
@@ -1244,7 +1316,7 @@ screenData:
             2:
                type: Bool
                value: 
-                  boolValue: 1
+                  boolValue: 0
             3:
                type: Bool
                value: 
@@ -1300,7 +1372,7 @@ topbarWidgetWidth:
       val: 5
    1:
       val: 1
-view: 1
+view: 0
 modelRegistrationID: ""
 customSwitches: 
    SW1:
