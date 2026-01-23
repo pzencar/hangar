@@ -1,0 +1,236 @@
+
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.5.3 Jan  9 2026 / 16:10:10 (0e533ba76) MSP API: 1.46
+# config rev: 3e29656
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name GEPRC_F722_AIO
+manufacturer_id GEPR
+mcu_id 003f00423235510e30383432
+signature 
+
+# feature
+feature -AIRMODE
+feature TELEMETRY
+feature OSD
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1500 2050 0 0
+aux 1 36 1 1500 2050 0 0
+aux 2 35 1 1125 1250 0 0
+aux 3 35 1 1375 1500 0 0
+aux 4 35 1 1625 1750 0 0
+aux 5 35 1 1875 2050 0 0
+aux 6 28 2 1500 2050 0 0
+aux 7 1 2 1250 1500 0 0
+aux 8 1 2 1750 2050 0 0
+aux 9 13 2 1125 1250 0 0
+aux 10 13 2 1375 1500 0 0
+aux 11 13 2 1625 1750 0 0
+aux 12 13 2 1875 2050 0 0
+
+# adjrange
+adjrange 0 0 5 900 2100 29 5 0 0
+adjrange 1 0 4 900 2100 12 4 0 0
+
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 3
+vtxtable powervalues 25 200 400
+vtxtable powerlabels 25 200 400
+
+# vtx
+vtx 0 5 0 0 1 900 1100
+vtx 1 5 0 0 2 1250 1450
+vtx 2 5 0 0 3 1500 2100
+vtx 4 6 0 4 0 900 1100
+vtx 5 6 0 5 0 1250 1450
+vtx 6 6 0 6 0 1500 1750
+vtx 7 6 0 7 0 1750 2100
+
+# rxfail
+rxfail 7 s 1500
+rxfail 9 s 1000
+rxfail 10 s 1000
+
+# master
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set acc_calibration = 59,42,-26,1
+set dshot_bidir = ON
+set motor_output_reordering = 2,0,3,1,4,5,6,7
+set align_board_roll = 180
+set align_board_pitch = 180
+set vbat_min_cell_voltage = 310
+set vbat_warning_cell_voltage = 330
+set ibata_scale = 195
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_warn_bitmask = 397311
+set osd_link_quality_alarm = 75
+set osd_rssi_dbm_alarm = -98
+set osd_cap_alarm = 4000
+set osd_alt_alarm = 150
+set osd_vbat_pos = 10240
+set osd_rssi_pos = 341
+set osd_link_quality_pos = 14725
+set osd_link_tx_power_pos = 341
+set osd_rssi_dbm_pos = 341
+set osd_rsnr_pos = 341
+set osd_tim_1_pos = 341
+set osd_tim_2_pos = 14365
+set osd_remaining_time_estimate_pos = 341
+set osd_flymode_pos = 10653
+set osd_anti_gravity_pos = 341
+set osd_g_force_pos = 341
+set osd_throttle_pos = 10333
+set osd_vtx_channel_pos = 341
+set osd_crosshairs_pos = 312
+set osd_ah_sbar_pos = 313
+set osd_ah_pos = 185
+set osd_current_pos = 10301
+set osd_mah_drawn_pos = 14401
+set osd_wh_drawn_pos = 341
+set osd_motor_diag_pos = 341
+set osd_craft_name_pos = 341
+set osd_pilot_name_pos = 341
+set osd_gps_speed_pos = 10266
+set osd_gps_lon_pos = 8253
+set osd_gps_lat_pos = 8233
+set osd_gps_sats_pos = 10653
+set osd_home_dir_pos = 10650
+set osd_home_dist_pos = 10653
+set osd_flight_dist_pos = 10643
+set osd_compass_bar_pos = 341
+set osd_altitude_pos = 10260
+set osd_pid_roll_pos = 341
+set osd_pid_pitch_pos = 341
+set osd_pid_yaw_pos = 341
+set osd_debug_pos = 8576
+set osd_power_pos = 341
+set osd_pidrate_profile_pos = 10632
+set osd_warnings_pos = 14420
+set osd_avg_cell_voltage_pos = 14368
+set osd_pit_ang_pos = 341
+set osd_rol_ang_pos = 341
+set osd_battery_usage_pos = 341
+set osd_disarmed_pos = 341
+set osd_nheading_pos = 341
+set osd_up_down_reference_pos = 312
+set osd_ready_mode_pos = 341
+set osd_nvario_pos = 341
+set osd_esc_tmp_pos = 413
+set osd_esc_rpm_pos = 341
+set osd_esc_rpm_freq_pos = 341
+set osd_rtc_date_time_pos = 341
+set osd_adjustment_range_pos = 341
+set osd_flip_arrow_pos = 14680
+set osd_core_temp_pos = 10653
+set osd_log_status_pos = 341
+set osd_stick_overlay_left_pos = 341
+set osd_stick_overlay_right_pos = 341
+set osd_rate_profile_name_pos = 341
+set osd_pid_profile_name_pos = 341
+set osd_profile_name_pos = 10625
+set osd_rcchannels_pos = 341
+set osd_camera_frame_pos = 142
+set osd_efficiency_pos = 341
+set osd_total_flights_pos = 341
+set osd_aux_pos = 341
+set osd_sys_goggle_voltage_pos = 341
+set osd_sys_vtx_voltage_pos = 341
+set osd_sys_bitrate_pos = 341
+set osd_sys_delay_pos = 341
+set osd_sys_distance_pos = 341
+set osd_sys_lq_pos = 341
+set osd_sys_goggle_dvr_pos = 341
+set osd_sys_vtx_dvr_pos = 341
+set osd_sys_warnings_pos = 341
+set osd_sys_vtx_temp_pos = 341
+set osd_sys_fan_speed_pos = 341
+set osd_stat_bitmask = 1078116030
+set osd_displayport_device = MSP
+set osd_canvas_height = 13
+set debug_mode = CYCLETIME
+set vtx_band = 5
+set vtx_channel = 4
+set vtx_power = 1
+set vtx_freq = 5769
+
+profile 0
+
+# profile 0
+set profile_name = Main
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = RP1
+set thr_mid = 0
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+
+rateprofile 1
+
+# rateprofile 1
+set rateprofile_name = RP2
+set thr_mid = 0
+set roll_rc_rate = 6
+set pitch_rc_rate = 6
+set yaw_rc_rate = 6
+set roll_expo = 50
+set pitch_expo = 50
+set yaw_expo = 50
+
+rateprofile 2
+
+# rateprofile 2
+set rateprofile_name = RP3
+set thr_mid = 0
+set thr_expo = 25
+set roll_rc_rate = 4
+set pitch_rc_rate = 4
+set yaw_rc_rate = 4
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+set roll_srate = 55
+set pitch_srate = 55
+set yaw_srate = 55
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+save
