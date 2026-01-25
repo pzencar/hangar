@@ -138,7 +138,7 @@ def get_bit_ranges(min_: int, max_: int, bit_width: int) -> dict[int, list[tuple
     return bit_ranges
 
 def evaluate_modes(modes) -> str:
-    MAX_IDX = 18
+    MAX_IDX = 19
     aux = ''
 
     idx = 0
@@ -177,27 +177,39 @@ if __name__ == '__main__':
             bit_width = 3,
         ),
         AuxMode(
-            mode=ModeMap.AIRMODE,
-            aux = 2,
-            bit = 2,
-            bit_width = 3,
-        ),
-        AuxMode(
-            mode=ModeMap.ANGLE,
-            aux = 2,
-            bit = 1,
+            mode=ModeMap.FLIP_OVER_AFTER_CRASH,
+            aux = 1,
+            bit = 0,
             bit_width = 3,
         ),
         AuxMode(
             mode=ModeMap.ALT_HOLD,
             aux = 2,
-            bit = 0,
+            bit = 2,
             bit_width = 3,
         ),
         AuxMode(
             mode=ModeMap.POS_HOLD,
             aux = 2,
+            bit = 2,
+            bit_width = 3,
+        ),
+        AuxMode(
+            mode=ModeMap.AIRMODE,
+            aux = 2,
+            bit = 1,
+            bit_width = 3,
+        ),
+        AuxMode(
+            mode=ModeMap.ANGLE,
+            aux = 2,
             bit = 0,
+            bit_width = 3,
+        ),
+        AuxMode(
+            mode=ModeMap.BEEPERON,
+            aux = 3,
+            bit = 2,
             bit_width = 3,
         ),
     ]
