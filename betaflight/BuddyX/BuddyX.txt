@@ -406,8 +406,8 @@ set blackbox_disable_pids = OFF
 set blackbox_disable_rc = OFF
 set blackbox_disable_setpoint = OFF
 set blackbox_disable_bat = OFF
-set blackbox_disable_alt = OFF
-set blackbox_disable_rssi = OFF
+set blackbox_disable_alt = ON
+set blackbox_disable_rssi = ON
 set blackbox_disable_gyro = OFF
 set blackbox_disable_gyrounfilt = OFF
 set blackbox_disable_acc = OFF
@@ -1344,7 +1344,7 @@ set pitch_rate_limit = 1998
 set yaw_rate_limit = 1998
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 1
 
 # save configuration
 save
