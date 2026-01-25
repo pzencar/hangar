@@ -5,11 +5,13 @@ class ModeMap(IntEnum):
     ARM = 0
     ANGLE = 1
     HORIZON = 2
+    ALT_HOLD= 3
     ANTI_GRAVITY = 4
     MAG = 5
     HEADFREE = 6
     HEADADJ = 7
     CAMSTAB = 8
+    POS_HOLD = 11
     PASSTHRU = 12
     BEEPERON = 13
     LEDLOW = 15
@@ -52,11 +54,13 @@ MODE_LABEL = {
     0: 'ARM',
     1: 'ANGLE',
     2: 'HORIZON',
+    3: 'ALT_HOLD',
     4: 'ANTI_GRAVITY',
     5: 'MAG',
     6: 'HEADFREE',
     7: 'HEADADJ',
     8: 'CAMSTAB',
+    11: 'POS_HOLD',
     12: 'PASSTHRU',
     13: 'BEEPERON',
     15: 'LEDLOW',
@@ -173,12 +177,6 @@ if __name__ == '__main__':
             bit_width = 3,
         ),
         AuxMode(
-            mode=ModeMap.FLIP_OVER_AFTER_CRASH,
-            aux = 1,
-            bit = 0,
-            bit_width = 3,
-        ),
-        AuxMode(
             mode=ModeMap.AIRMODE,
             aux = 2,
             bit = 2,
@@ -191,7 +189,13 @@ if __name__ == '__main__':
             bit_width = 3,
         ),
         AuxMode(
-            mode=ModeMap.BEEPERON,
+            mode=ModeMap.ALT_HOLD,
+            aux = 2,
+            bit = 0,
+            bit_width = 3,
+        ),
+        AuxMode(
+            mode=ModeMap.POS_HOLD,
             aux = 2,
             bit = 0,
             bit_width = 3,

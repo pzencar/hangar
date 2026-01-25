@@ -1,0 +1,196 @@
+
+# version
+# Betaflight / STM32F7X2 (F722) 2025.12.1 Dec 27 2025 / 18:15:29 (85d201376) MSP API: 1.47
+# config rev: 46f5576
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name SKYSTARSF7HDPRO
+manufacturer_id SKST
+mcu_id 003e00125746501420303431
+signature 
+
+# name: BuddyX
+
+# feature
+feature -AIRMODE
+feature GPS
+feature TELEMETRY
+feature OSD
+feature ESC_SENSOR
+
+# serial
+serial UART1 64 115200 57600 0 115200
+serial UART3 1024 115200 57600 0 115200
+serial UART5 2 115200 57600 0 115200
+serial UART6 131073 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1500 2050 0 0
+aux 1 1 2 1250 1500 0 0
+aux 2 1 2 1750 2050 0 0
+aux 3 46 1 1250 1500 0 0
+aux 4 46 1 1750 2050 0 0
+aux 5 13 2 1125 1250 0 0
+aux 6 13 2 1375 1500 0 0
+aux 7 13 2 1625 1750 0 0
+aux 8 13 2 1875 2050 0 0
+aux 9 28 2 1500 2050 0 0
+aux 10 35 1 1125 1250 0 0
+aux 11 35 1 1375 1500 0 0
+aux 12 35 1 1625 1750 0 0
+aux 13 35 1 1875 2050 0 0
+aux 14 36 1 1500 2050 0 0
+
+# adjrange
+adjrange 0 0 5 900 2100 29 5 0 0
+adjrange 1 0 4 900 2100 12 4 0 0
+adjrange 2 0 0 900 925 0 0 0 0
+
+# master
+set gyro_lpf1_static_hz = 225
+set gyro_lpf2_static_hz = 450
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set gyro_lpf1_dyn_min_hz = 225
+set gyro_lpf1_dyn_max_hz = 450
+set acc_calibration = -35,-32,50,1
+set rc_smoothing_auto_factor = 70
+set rc_smoothing_auto_factor_throttle = 50
+set blackbox_disable_alt = ON
+set blackbox_disable_rssi = ON
+set dshot_bidir = ON
+set failsafe_procedure = GPS-RESCUE
+set vbat_min_cell_voltage = 315
+set vbat_warning_cell_voltage = 335
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_ublox_use_galileo = ON
+set gps_set_home_point_once = ON
+set gps_rescue_min_sats = 7
+set gps_rescue_allow_arming_without_fix = ON
+set simplified_gyro_filter_multiplier = 90
+set osd_link_quality_alarm = 75
+set osd_rssi_dbm_alarm = -98
+set osd_cap_alarm = 4000
+set osd_alt_alarm = 150
+set osd_vbat_pos = 10240
+set osd_link_quality_pos = 14885
+set osd_tim_2_pos = 15375
+set osd_flymode_pos = 11888
+set osd_throttle_pos = 11343
+set osd_current_pos = 11310
+set osd_mah_drawn_pos = 14401
+set osd_gps_speed_pos = 10266
+set osd_gps_lon_pos = 8253
+set osd_gps_lat_pos = 8233
+set osd_gps_sats_pos = 11877
+set osd_home_dir_pos = 10842
+set osd_home_dist_pos = 10846
+set osd_flight_dist_pos = 10835
+set osd_altitude_pos = 10260
+set osd_debug_pos = 8800
+set osd_pidrate_profile_pos = 10856
+set osd_warnings_pos = 14420
+set osd_avg_cell_voltage_pos = 14368
+set osd_esc_tmp_pos = 1639
+set osd_flip_arrow_pos = 14680
+set osd_core_temp_pos = 11882
+set osd_profile_name_pos = 10849
+set osd_stat_bitmask = 1078116030
+set debug_mode = CYCLETIME
+set craft_name = BuddyX
+
+profile 0
+
+# profile 0
+set profile_name = Main
+set dterm_lpf1_dyn_min_hz = 67
+set dterm_lpf1_dyn_max_hz = 135
+set dterm_lpf1_static_hz = 67
+set dterm_lpf2_static_hz = 135
+set p_pitch = 54
+set i_pitch = 96
+set d_pitch = 39
+set f_pitch = 137
+set p_roll = 51
+set i_roll = 92
+set d_roll = 34
+set f_roll = 132
+set p_yaw = 51
+set i_yaw = 92
+set f_yaw = 132
+set d_max_roll = 46
+set d_max_pitch = 52
+set feedforward_jitter_factor = 10
+set simplified_d_gain = 115
+set simplified_pi_gain = 115
+set simplified_feedforward_gain = 110
+set simplified_dterm_filter_multiplier = 90
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = RP1
+set thr_mid = 0
+set thr_expo = 20
+set thr_hover = 0
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+
+rateprofile 1
+
+# rateprofile 1
+set rateprofile_name = RP2
+set thr_mid = 0
+set thr_expo = 35
+set thr_hover = 0
+set roll_rc_rate = 6
+set pitch_rc_rate = 6
+set yaw_rc_rate = 6
+set roll_expo = 45
+set pitch_expo = 45
+set yaw_expo = 45
+
+rateprofile 2
+
+# rateprofile 2
+set rateprofile_name = RP3
+set thr_mid = 0
+set thr_expo = 45
+set thr_hover = 0
+set roll_rc_rate = 4
+set pitch_rc_rate = 4
+set yaw_rc_rate = 4
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+set roll_srate = 55
+set pitch_srate = 55
+set yaw_srate = 55
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 1
+
+# save configuration
+save

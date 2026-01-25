@@ -3,7 +3,7 @@
 # dump all
 
 # version
-# Betaflight / STM32F7X2 (F722) 2025.12.1 Dec 27 2025 / 18:15:29 (85d201376) MSP API: 1.47
+# Betaflight / STM32F7X2 (F722) 2025.12.1 Jan 18 2026 / 15:40:31 (85d201376) MSP API: 1.47
 # config rev: 46f5576
 
 # start the command batch
@@ -62,7 +62,6 @@ resource SPI_SDO 2 B15
 resource SPI_SDO 3 B05
 resource SPI_SDO 4 NONE
 resource ESCSERIAL 1 NONE
-resource CAMERA_CONTROL 1 A08
 resource ADC_BATT 1 C01
 resource ADC_RSSI 1 C02
 resource ADC_CURR 1 C03
@@ -235,20 +234,20 @@ map AETR1234
 
 # aux
 aux 0 0 0 1500 2050 0 0
-aux 1 1 2 1250 1500 0 0
-aux 2 1 2 1750 2050 0 0
-aux 3 46 1 1250 1500 0 0
-aux 4 46 1 1750 2050 0 0
-aux 5 13 2 1125 1250 0 0
-aux 6 13 2 1375 1500 0 0
-aux 7 13 2 1625 1750 0 0
-aux 8 13 2 1875 2050 0 0
-aux 9 28 2 1500 2050 0 0
-aux 10 35 1 1125 1250 0 0
-aux 11 35 1 1375 1500 0 0
-aux 12 35 1 1625 1750 0 0
-aux 13 35 1 1875 2050 0 0
-aux 14 36 1 1500 2050 0 0
+aux 1 36 1 1500 2050 0 0
+aux 2 46 1 1250 1500 0 0
+aux 3 46 1 1750 2050 0 0
+aux 4 28 2 1500 2050 0 0
+aux 5 1 2 1250 1500 0 0
+aux 6 1 2 1750 2050 0 0
+aux 7 3 2 1125 1250 0 0
+aux 8 3 2 1375 1500 0 0
+aux 9 3 2 1625 1750 0 0
+aux 10 3 2 1875 2050 0 0
+aux 11 11 2 1125 1250 0 0
+aux 12 11 2 1375 1500 0 0
+aux 13 11 2 1625 1750 0 0
+aux 14 11 2 1875 2050 0 0
 aux 15 0 0 900 900 0 0
 aux 16 0 0 900 900 0 0
 aux 17 0 0 900 900 0 0
@@ -258,7 +257,7 @@ aux 19 0 0 900 900 0 0
 # adjrange
 adjrange 0 0 5 900 2100 29 5 0 0
 adjrange 1 0 4 900 2100 12 4 0 0
-adjrange 2 0 0 900 925 0 0 0 0
+adjrange 2 0 0 900 900 0 0 0 0
 adjrange 3 0 0 900 900 0 0 0 0
 adjrange 4 0 0 900 900 0 0 0 0
 adjrange 5 0 0 900 900 0 0 0 0
@@ -292,25 +291,6 @@ rxrange 0 1000 2000
 rxrange 1 1000 2000
 rxrange 2 1000 2000
 rxrange 3 1000 2000
-
-# vtxtable
-vtxtable bands 0
-vtxtable channels 0
-vtxtable powerlevels 0
-vtxtable powervalues
-vtxtable powerlabels
-
-# vtx
-vtx 0 0 0 0 0 900 900
-vtx 1 0 0 0 0 900 900
-vtx 2 0 0 0 0 900 900
-vtx 3 0 0 0 0 900 900
-vtx 4 0 0 0 0 900 900
-vtx 5 0 0 0 0 900 900
-vtx 6 0 0 0 0 900 900
-vtx 7 0 0 0 0 900 900
-vtx 8 0 0 0 0 900 900
-vtx 9 0 0 0 0 900 900
 
 # rxfail
 rxfail 0 a
@@ -363,7 +343,7 @@ set acc_hardware = AUTO
 set acc_lpf_hz = 25
 set acc_trim_pitch = 0
 set acc_trim_roll = 0
-set acc_calibration = -35,-32,50,1
+set acc_calibration = -46,-58,52,1
 set baro_bustype = SPI
 set baro_spi_device = 2
 set baro_i2c_device = 0
@@ -533,6 +513,10 @@ set gps_rescue_yaw_p = 20
 set deadband = 0
 set yaw_deadband = 0
 set yaw_control_reversed = OFF
+set alt_hold_climb_rate = 50
+set alt_hold_deadband = 20
+set pos_hold_without_mag = ON
+set pos_hold_deadband = 5
 set pid_process_denom = 1
 set runaway_takeoff_prevention = ON
 set runaway_takeoff_deactivate_delay = 500
@@ -688,14 +672,6 @@ set rate_6pos_switch = OFF
 set cpu_overclock = OFF
 set pwr_on_arm_grace = 5
 set enable_stick_arming = OFF
-set vtx_band = 0
-set vtx_channel = 0
-set vtx_power = 0
-set vtx_low_power_disarm = OFF
-set vtx_softserial_alt = OFF
-set vtx_freq = 0
-set vtx_pit_mode_freq = 0
-set vtx_halfduplex = ON
 set vcd_video_system = HD
 set displayport_msp_col_adjust = 0
 set displayport_msp_row_adjust = 0
@@ -704,12 +680,6 @@ set displayport_msp_use_device_blink = OFF
 set esc_sensor_halfduplex = OFF
 set esc_sensor_current_offset = 0
 set led_inversion = 0
-set camera_control_mode = HARDWARE_PWM
-set camera_control_ref_voltage = 330
-set camera_control_key_delay = 180
-set camera_control_internal_resistance = 470
-set camera_control_button_resistance = 450,270,150,68,0
-set camera_control_inverted = OFF
 set pinio_config = 129,1,1,1
 set pinio_box = 40,255,255,255
 set usb_hid_cdc = OFF
@@ -815,18 +785,18 @@ set pidsum_limit_yaw = 400
 set yaw_lowpass_hz = 100
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set p_pitch = 54
-set i_pitch = 96
-set d_pitch = 39
-set f_pitch = 137
-set p_roll = 51
-set i_roll = 92
-set d_roll = 34
-set f_roll = 132
-set p_yaw = 51
-set i_yaw = 92
+set p_pitch = 49
+set i_pitch = 88
+set d_pitch = 37
+set f_pitch = 131
+set p_roll = 47
+set i_roll = 84
+set d_roll = 33
+set f_roll = 125
+set p_yaw = 47
+set i_yaw = 84
 set d_yaw = 0
-set f_yaw = 132
+set f_yaw = 125
 set angle_p_gain = 50
 set angle_feedforward = 50
 set angle_feedforward_smoothing_ms = 80
@@ -843,8 +813,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_max_roll = 46
-set d_max_pitch = 52
+set d_max_roll = 44
+set d_max_pitch = 50
 set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
@@ -874,10 +844,10 @@ set level_race_mode = OFF
 set simplified_pids_mode = RPY
 set simplified_master_multiplier = 100
 set simplified_i_gain = 100
-set simplified_d_gain = 115
-set simplified_pi_gain = 115
+set simplified_d_gain = 110
+set simplified_pi_gain = 105
 set simplified_d_max_gain = 100
-set simplified_feedforward_gain = 110
+set simplified_feedforward_gain = 105
 set simplified_pitch_d_gain = 100
 set simplified_pitch_pi_gain = 100
 set simplified_dterm_filter = ON
