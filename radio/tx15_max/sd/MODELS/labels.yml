@@ -7,11 +7,12 @@ Models:
     name: "USB"
     labels: ""
     bitmap: "edgetx.png"
-    lastopen: 1769032404
+    lastopen: 1769187542
   model1.yml:
-    hash: "286f0000375c907c"
+    hash: "d7790000385ca7b6"
     name: "ELRS WIDE"
+    mod0type: 5
     labels: ""
     bitmap: "elrs.png"
-    lastopen: 1769032449
+    lastopen: 1769199389
 
