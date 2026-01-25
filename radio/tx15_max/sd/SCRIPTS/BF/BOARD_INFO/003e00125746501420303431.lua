@@ -1,0 +1,16 @@
+return {
+    boardIdentifier = "F722",
+    hardwareRevision = 0,
+    boardType = 0,
+    targetCapabilities = 65,
+    targetName = "STM32F7X2",
+    boardName = "SKYSTARSF7HDPRO",
+    manufacturerId = "SKST",
+    signature = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, },
+    mcuTypeId = 1,
+    configurationState = 128,
+    gyroSampleRateHz = 3200,
+    configurationProblems = 0,
+    spiRegisteredDeviceCount = 2,
+    i2cRegisteredDeviceCount = 0,
+}
