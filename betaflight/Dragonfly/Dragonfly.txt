@@ -1,4 +1,4 @@
-Entering CLI 
+# 
 
 # dump all
 
@@ -379,7 +379,7 @@ set mag_bustype = I2C
 set mag_i2c_device = 2
 set mag_i2c_address = 0
 set mag_spi_device = 0
-set mag_hardware = AUTO
+set mag_hardware = NONE
 set mag_calibration = 0,0,0
 set baro_bustype = I2C
 set baro_spi_device = 0
@@ -641,7 +641,7 @@ set osd_altitude_pos = 10260
 set osd_pid_roll_pos = 341
 set osd_pid_pitch_pos = 341
 set osd_pid_yaw_pos = 341
-set osd_debug_pos = 8800
+set osd_debug_pos = 608
 set osd_debug2_pos = 341
 set osd_power_pos = 341
 set osd_pidrate_profile_pos = 10856
