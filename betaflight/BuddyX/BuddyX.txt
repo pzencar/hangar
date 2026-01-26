@@ -527,7 +527,7 @@ set tlm_inverted = OFF
 set tlm_halfduplex = ON
 set hott_alarm_int = 5
 set pid_in_tlm = OFF
-set report_cell_voltage = OFF
+set report_cell_voltage = ON
 set telemetry_disabled_voltage = OFF
 set telemetry_disabled_current = OFF
 set telemetry_disabled_fuel = OFF
@@ -1314,7 +1314,7 @@ set pitch_rate_limit = 1998
 set yaw_rate_limit = 1998
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 1
 
 # save configuration
 save
