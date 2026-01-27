@@ -9,17 +9,15 @@ Models:
     bitmap: "edgetx.png"
     lastopen: 1769187542
   model1.yml:
-    hash: "fe8400003b5cf6a0"
+    hash: "278600003b5c17a4"
     name: "ELRS WIDE LIPO"
-    mod0type: 5
     labels: ""
     bitmap: "elrs.png"
     lastopen: 1769545940
   model3.yml:
-    hash: "fe8400003b5ce9a0"
+    hash: "278600003b5c08a4"
     name: "ELRS WIDE LION"
-    mod0type: 5
     labels: ""
     bitmap: "elrs.png"
-    lastopen: 1769545833
+    lastopen: 1769546872
 

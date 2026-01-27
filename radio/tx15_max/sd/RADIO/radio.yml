@@ -1,4 +1,4 @@
-checksum: 51417
+checksum: 18416
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -82,7 +82,7 @@ speakerVolume: 17
 vBatMin: 50
 vBatMax: 84
 backlightBright: 77
-globalTimer: 103942
+globalTimer: 104832
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 2
@@ -226,7 +226,7 @@ switchConfig:
          r: 0
          g: 0
          b: 0
-currModelFilename: "model1.yml"
+currModelFilename: "model3.yml"
 blOffBright: 2
 bluetoothName: ""
 ownerRegistrationID: ""

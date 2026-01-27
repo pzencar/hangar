@@ -403,11 +403,11 @@ logicalSw:
       duration: 0
    2:
       func: FUNC_VNEG
-      def: "tele(21),33"
+      def: "tele(21),35"
       andsw: "!L2"
       lsPersist: 0
       lsState: 0
-      delay: 5
+      delay: 20
       duration: 0
 customFn: 
    0:
@@ -479,7 +479,7 @@ flightModeData:
          1:
             val: -100
          2:
-            val: -100
+            val: 0
          3:
             val: -100
          4:
@@ -541,19 +541,6 @@ rfAlarms:
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
 jitterFilter: OFF
-moduleData: 
-   0:
-      type: TYPE_CROSSFIRE
-      subType: 0
-      channelsStart: 0
-      channelsCount: 16
-      failsafeMode: NOT_SET
-      mod: 
-         crsf: 
-            telemetryBaudrate: 0
-            crsfArmingMode: 0
-            crsfArmingTrigger: "NONE"
-            spare3: 0
 trainerData: 
    mode: OFF
    channelsStart: 0
@@ -1502,7 +1489,7 @@ topbarWidgetWidth:
       val: 5
    1:
       val: 1
-view: 0
+view: 2
 modelRegistrationID: ""
 customSwitches: 
    SW1:
