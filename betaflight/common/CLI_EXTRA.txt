@@ -1,0 +1,6 @@
+set report_cell_voltage = ON
+
+set alt_hold_climb_rate = 50
+set alt_hold_deadband = 40
+set pos_hold_without_mag = ON
+set pos_hold_deadband = 12
