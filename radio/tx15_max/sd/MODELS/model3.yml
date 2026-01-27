@@ -1,6 +1,6 @@
 semver: 2.12.0
 header: 
-   name: "ELRS WIDE LIPO"
+   name: "ELRS WIDE LION"
    bitmap: "elrs.png"
    labels: ""
 telemetryProtocol: 0
@@ -403,7 +403,7 @@ logicalSw:
       duration: 0
    2:
       func: FUNC_VNEG
-      def: "tele(21),33"
+      def: "tele(21),27"
       andsw: "!L2"
       lsPersist: 0
       lsState: 0
@@ -1095,7 +1095,7 @@ screenData:
                      0:
                         type: String
                         value: 
-                           stringValue: LI-PO
+                           stringValue: LI-ON
                      1:
                         type: Color
                         value: 

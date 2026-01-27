@@ -1,4 +1,4 @@
-checksum: 63765
+checksum: 51417
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -6,30 +6,30 @@ semver: 2.12.0
 board: tx15
 calib: 
    LH:
-      mid: 1008
-      spanNeg: 667
-      spanPos: 713
-   LV:
       mid: 1006
-      spanNeg: 740
-      spanPos: 741
+      spanNeg: 665
+      spanPos: 717
+   LV:
+      mid: 1001
+      spanNeg: 739
+      spanPos: 750
    RV:
       mid: 1002
-      spanNeg: 763
-      spanPos: 783
+      spanNeg: 761
+      spanPos: 780
    RH:
-      mid: 1063
-      spanNeg: 764
+      mid: 1065
+      spanNeg: 767
       spanPos: 732
    P1:
-      mid: 1034
-      spanNeg: 1018
-      spanPos: 998
+      mid: 1033
+      spanNeg: 1017
+      spanPos: 999
    P2:
-      mid: 1021
-      spanNeg: 1006
-      spanPos: 1010
-vBatWarn: 62
+      mid: 1027
+      spanNeg: 1011
+      spanPos: 1005
+vBatWarn: 56
 txVoltageCalibration: -16
 backlightMode: backlight_mode_keys
 antennaMode: MODE_PER_MODEL
@@ -73,16 +73,16 @@ lightAutoOff: 12
 templateSetup: 21
 PPM_Multiplier: 0
 hapticLength: 0
-beepLength: 1
+beepLength: 2
 hapticStrength: 1
 gpsFormat: 1
 audioMuteEnable: 0
-speakerPitch: 0
+speakerPitch: 15
 speakerVolume: 17
-vBatMin: 60
+vBatMin: 50
 vBatMax: 84
 backlightBright: 77
-globalTimer: 87360
+globalTimer: 103942
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 2
@@ -94,7 +94,7 @@ disableRssiPoweroffAlarm: 0
 USBMode: 0
 jackMode: 0
 ttsLanguage: "en"
-beepVolume: 2
+beepVolume: 3
 wavVolume: 3
 varioVolume: 2
 backgroundVolume: 3
@@ -106,6 +106,10 @@ customFn:
       swtch: "ON"
       func: BACKLIGHT
       def: "P1,1"
+   1:
+      swtch: "ON"
+      func: VOLUME
+      def: "P1,0"
 serialPort: 
    VCP:
       mode: CLI
