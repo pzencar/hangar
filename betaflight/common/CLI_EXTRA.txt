@@ -1,4 +1,4 @@
-set report_cell_voltage = ON
+set report_cell_voltage = OFF
 
 set alt_hold_climb_rate = 50
 set alt_hold_deadband = 40
