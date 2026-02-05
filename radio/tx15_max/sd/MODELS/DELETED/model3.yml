@@ -1,6 +1,6 @@
 semver: 2.12.0
 header: 
-   name: "6S LIPO"
+   name: "ELRS WIDE LION"
    bitmap: "elrs.png"
    labels: ""
 telemetryProtocol: 0
@@ -394,8 +394,8 @@ logicalSw:
       delay: 0
       duration: 0
    1:
-      func: FUNC_VNEG
-      def: "tele(21),55"
+      func: FUNC_VEQUAL
+      def: "tele(21),0"
       andsw: "NONE"
       lsPersist: 0
       lsState: 0
@@ -403,7 +403,7 @@ logicalSw:
       duration: 0
    2:
       func: FUNC_VNEG
-      def: "tele(21),204"
+      def: "tele(21),28"
       andsw: "!L2"
       lsPersist: 0
       lsState: 0
@@ -479,7 +479,7 @@ flightModeData:
          1:
             val: -100
          2:
-            val: 0
+            val: -100
          3:
             val: -100
          4:
@@ -541,19 +541,6 @@ rfAlarms:
 thrTrimSw: 0
 potsWarnMode: WARN_OFF
 jitterFilter: OFF
-moduleData: 
-   0:
-      type: TYPE_CROSSFIRE
-      subType: 0
-      channelsStart: 0
-      channelsCount: 16
-      failsafeMode: NOT_SET
-      mod: 
-         crsf: 
-            telemetryBaudrate: 0
-            crsfArmingMode: 0
-            crsfArmingTrigger: "NONE"
-            spare3: 0
 trainerData: 
    mode: OFF
    channelsStart: 0
@@ -1095,7 +1082,7 @@ screenData:
                      0:
                         type: String
                         value: 
-                           stringValue: 6S LI-PO
+                           stringValue: LI-ON
                      1:
                         type: Color
                         value: 
@@ -1502,7 +1489,7 @@ topbarWidgetWidth:
       val: 5
    1:
       val: 1
-view: 1
+view: 0
 modelRegistrationID: ""
 customSwitches: 
    SW1:
