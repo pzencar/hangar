@@ -563,7 +563,7 @@ set tlm_inverted = OFF
 set tlm_halfduplex = ON
 set hott_alarm_int = 5
 set pid_in_tlm = OFF
-set report_cell_voltage = ON
+set report_cell_voltage = OFF
 set telemetry_disabled_voltage = OFF
 set telemetry_disabled_current = OFF
 set telemetry_disabled_fuel = OFF
@@ -686,7 +686,7 @@ set osd_sys_warnings_pos = 341
 set osd_sys_vtx_temp_pos = 341
 set osd_sys_fan_speed_pos = 341
 set osd_stat_bitmask = 1078116030
-set osd_profile = 1
+set osd_profile = 3
 set osd_profile_1_name = -
 set osd_profile_2_name = -
 set osd_profile_3_name = -
@@ -887,7 +887,7 @@ set dyn_idle_i_gain = 50
 set dyn_idle_d_gain = 50
 set dyn_idle_max_increase = 150
 set level_race_mode = OFF
-set simplified_pids_mode = RPY
+set simplified_pids_mode = OFF
 set simplified_master_multiplier = 100
 set simplified_i_gain = 100
 set simplified_d_gain = 110
@@ -1360,7 +1360,7 @@ set pitch_rate_limit = 1998
 set yaw_rate_limit = 1998
 
 # restore original rateprofile selection
-rateprofile 0
+rateprofile 1
 
 # save configuration
 save
