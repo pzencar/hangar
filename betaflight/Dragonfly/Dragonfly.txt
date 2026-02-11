@@ -3,7 +3,7 @@
 # dump all
 
 # version
-# Betaflight / STM32F7X2 (F722) 2025.12.2 Feb 10 2026 / 22:55:57 (norevision) MSP API: 1.47
+# Betaflight / STM32F7X2 (F722) 2025.12.2 Feb 11 2026 / 13:34:43 (norevision) MSP API: 1.47
 
 # start the command batch
 batch start
@@ -641,27 +641,24 @@ set osd_core_temp_alarm = 70
 set osd_ah_max_pit = 20
 set osd_ah_max_rol = 40
 set osd_ah_invert = OFF
-set osd_adh_cam_angle = 28
-set osd_adh_cam_ver_fov = 62
+set osd_adh_cam_angle = 280
+set osd_adh_cam_ver_fov = 640
 set osd_adh_roll_factor = 90
 set osd_adh_size = 5
 set osd_adh_l_sym = 124
 set osd_adh_r_sym = 124
-set osd_adh_mark1_deg = 28
+set osd_adh_mark1_deg = 280
 set osd_adh_mark1_size = 1
-set osd_adh_mark1_l_sym = 62
-set osd_adh_mark1_r_sym = 60
-set osd_adh_mark1_d_sym = 23
+set osd_adh_mark1_l_sym = 124
+set osd_adh_mark1_r_sym = 124
 set osd_adh_mark2_deg = 0
 set osd_adh_mark2_size = 1
-set osd_adh_mark2_l_sym = 62
-set osd_adh_mark2_r_sym = 60
-set osd_adh_mark2_d_sym = 23
-set osd_adh_mark3_deg = 255
+set osd_adh_mark2_l_sym = 124
+set osd_adh_mark2_r_sym = 124
+set osd_adh_mark3_deg = 500
 set osd_adh_mark3_size = 1
-set osd_adh_mark3_l_sym = 62
-set osd_adh_mark3_r_sym = 60
-set osd_adh_mark3_d_sym = 23
+set osd_adh_mark3_l_sym = 124
+set osd_adh_mark3_r_sym = 124
 set osd_adh_lock_roll = OFF
 set osd_adh_invert_roll = OFF
 set osd_adh_invert_pitch = OFF
@@ -687,7 +684,7 @@ set osd_vtx_channel_pos = 341
 set osd_crosshairs_pos = 312
 set osd_ah_sbar_pos = 312
 set osd_ah_pos = 185
-set osd_adh_pos = 4410
+set osd_adh_pos = 45402
 set osd_current_pos = 11528
 set osd_mah_drawn_pos = 10503
 set osd_wh_drawn_pos = 341
@@ -695,8 +692,8 @@ set osd_motor_diag_pos = 341
 set osd_craft_name_pos = 341
 set osd_pilot_name_pos = 341
 set osd_gps_speed_pos = 9641
-set osd_gps_lon_pos = 8348
-set osd_gps_lat_pos = 8334
+set osd_gps_lon_pos = 26088
+set osd_gps_lat_pos = 25060
 set osd_gps_sats_pos = 9609
 set osd_home_dir_pos = 8619
 set osd_home_dist_pos = 8613
