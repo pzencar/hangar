@@ -3,7 +3,7 @@
 # dump all
 
 # version
-# Betaflight / STM32F7X2 (F722) 2025.12.2 Feb 11 2026 / 13:34:43 (norevision) MSP API: 1.47
+# Betaflight / STM32F7X2 (F722) 2025.12.2 Feb 11 2026 / 20:12:03 (norevision) MSP API: 1.47
 
 # start the command batch
 batch start
@@ -401,7 +401,7 @@ set acc_hardware = AUTO
 set acc_lpf_hz = 25
 set acc_trim_pitch = 0
 set acc_trim_roll = 0
-set acc_calibration = -39,33,-23,1
+set acc_calibration = 81,-6,7,1
 set baro_bustype = I2C
 set baro_spi_device = 0
 set baro_i2c_device = 2
@@ -644,6 +644,7 @@ set osd_ah_invert = OFF
 set osd_adh_cam_angle = 280
 set osd_adh_cam_ver_fov = 640
 set osd_adh_roll_factor = 90
+set osd_adh_max_roll = 0
 set osd_adh_size = 5
 set osd_adh_l_sym = 124
 set osd_adh_r_sym = 124
@@ -659,7 +660,6 @@ set osd_adh_mark3_deg = 500
 set osd_adh_mark3_size = 1
 set osd_adh_mark3_l_sym = 124
 set osd_adh_mark3_r_sym = 124
-set osd_adh_lock_roll = OFF
 set osd_adh_invert_roll = OFF
 set osd_adh_invert_pitch = OFF
 set osd_logo_on_arming = OFF
