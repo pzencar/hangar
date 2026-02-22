@@ -1,27 +1,27 @@
 ## Initial setup
 
-- BL Heli -> Motor Timing: Auto, FreqLOW+HIGH: 24KHz for aggresive, 48kHz for more smoother
-- ELRS preset + Default PID tune preset
-- Blackbox GYRO_SCALED + 1.6 or 2 kHz
+- BL Heli -> Motor Timing: Auto, FreqLOW+HIGH: 24KHz for aggresive, 48kHz for more smoother -> Use 36kHz typically
+- ELRS preset \[freestyle\] + Default PID tune preset
+- Blackbox GYRO_SCALED + 1.6kHz or 2 kHz
 - Set PID and GYRO loop same freq ideally
 
 ## Filter tuning
 
 - Full throttle ramp flight
-- Turn off gyro lowpass 1
-- Gyro lowpass 2 to max (or 850Hz+)
+- Turn off gyro lowpass 1 \\??????????????????????????????????????????????????????????
+- Gyro lowpass 2 to max (or 850Hz+)  \\??????????????????????????????????????????????????????????
 - But if gyro freq different from PID freq, you need to use gyro lowpass, potentially only 2 should be OK in this instance too
 - Gyro RPM filter, set harmonics gains based on how strong is second and third harmonics e.g: `set rpm_filter_weights=100,40,70`
 - Gyro RPM filter min frequency. From 1st harmonics. Find lowest point, give some headroom
 - Tune headroom with fade (by distance from min freq set to start of noise: `set rpm_filter_fade_range_hz = 20` e.g 
-- Dynamic notch. Find the strongest noise in the line. Increase Q factor if noise is very narrow. Leave 500 if its not narrow, the more narrow it is, increase it more. 1000 for very thin line
-- Dynamic notch, set min and max freq of the strongest noise, put small margins
+- Dynamic notch. Find the strongest noise in the line (vertical, means no effect on throttle). Increase Q factor if noise is very narrow. Leave 500 if its not narrow, the more narrow it is, increase it more. 1000 for very thin line. higher value, better for latency
+- Dynamic notch, set min and max freq of the strongest vertical line noise, put small margins
 - Check notch count if obvious, should be 1 most of the time
-- Disable DTerm lowpass 2
+- Disable DTerm lowpass 2  \\??????????????????????????????????????????????????????????
 - DTerm lowpass 1 filter type BIQUAD, curve expo 7
-- Tune DTerm lowpass 1 values with slider. I usually go by how far are RPM filter freqs from the default. If the frequencies are much higher, I increase this slider
+- Tune DTerm lowpass 1 values with slider.
 
-## PID tuning
+## PID tuning (DO NOT DO IN ANGLE)
 
 - `pisdum_limit and pidsum_limit yaw` set to 1000 
 - Dynamic idle value 20-35 based on pitch (and presumably hover throttle). Higher pitch/lower idle throtthel, lower this number and vice versa
