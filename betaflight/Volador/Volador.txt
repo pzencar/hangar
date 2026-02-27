@@ -1,4 +1,4 @@
-# 
+Entering CLI Mode, type 'exit' to reboot, 
 
 # dump all
 
@@ -786,16 +786,16 @@ set pidsum_limit_yaw = 1000
 set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set p_pitch = 73
-set i_pitch = 139
-set d_pitch = 55
+set p_pitch = 75
+set i_pitch = 240
+set d_pitch = 54
 set f_pitch = 80
 set p_roll = 65
-set i_roll = 135
-set d_roll = 52
+set i_roll = 220
+set d_roll = 50
 set f_roll = 80
 set p_yaw = 65
-set i_yaw = 135
+set i_yaw = 220
 set d_yaw = 0
 set f_yaw = 80
 set angle_p_gain = 50
@@ -814,8 +814,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_max_roll = 52
-set d_max_pitch = 55
+set d_max_roll = 50
+set d_max_pitch = 54
 set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
