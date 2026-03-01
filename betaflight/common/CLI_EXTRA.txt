@@ -4,3 +4,6 @@ set alt_hold_climb_rate = 50
 set alt_hold_deadband = 40
 set pos_hold_without_mag = ON
 set pos_hold_deadband = 12
+
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
