@@ -1,4 +1,4 @@
-Entering CLI Mode, type 'exit' to
+# 
 
 # dump all
 
@@ -788,7 +788,7 @@ set throttle_boost_cutoff = 15
 set p_pitch = 68
 set i_pitch = 118
 set d_pitch = 38
-set f_pitch = 125
+set f_pitch = 115
 set p_roll = 60
 set i_roll = 165
 set d_roll = 31
@@ -1215,7 +1215,7 @@ set ez_landing_speed = 50
 set landing_disarm_threshold = 0
 
 # restore original profile selection
-profile 0
+profile 1
 
 rateprofile 0
 
