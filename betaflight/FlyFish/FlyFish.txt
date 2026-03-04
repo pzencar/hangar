@@ -1,4 +1,4 @@
-# 
+Entering CLI Mode
 
 # dump all
 
@@ -427,7 +427,7 @@ set align_board_roll = 0
 set align_board_pitch = 0
 set align_board_yaw = 0
 set bat_capacity = 0
-set vbat_max_cell_voltage = 430
+set vbat_max_cell_voltage = 438
 set vbat_full_cell_voltage = 410
 set vbat_min_cell_voltage = 260
 set vbat_warning_cell_voltage = 285
@@ -903,7 +903,7 @@ set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
 set p_pitch = 68
-set i_pitch = 110
+set i_pitch = 118
 set d_pitch = 41
 set f_pitch = 110
 set p_roll = 60
