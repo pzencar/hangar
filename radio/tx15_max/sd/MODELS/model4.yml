@@ -134,7 +134,7 @@ mixData:
    flightModes: 000000000
    weight: 100
    offset: 0
-   swtch: "SF2"
+   swtch: "L4"
    delayUp: 0
    delayDown: 0
    speedUp: 0
@@ -409,6 +409,14 @@ logicalSw:
       lsState: 0
       delay: 20
       duration: 0
+   3:
+      func: FUNC_VPOS
+      def: "gv(4),0"
+      andsw: "NONE"
+      lsPersist: 0
+      lsState: 0
+      delay: 0
+      duration: 0
 customFn: 
    0:
       swtch: "TrimEleUp"
@@ -483,7 +491,7 @@ flightModeData:
          3:
             val: -100
          4:
-            val: 0
+            val: -100
          5:
             val: 0
          6:
@@ -1502,7 +1510,7 @@ topbarWidgetWidth:
       val: 5
    1:
       val: 1
-view: 2
+view: 0
 modelRegistrationID: ""
 customSwitches: 
    SW1:
