@@ -1,0 +1,16 @@
+return {
+    boardIdentifier = "F722",
+    hardwareRevision = 0,
+    boardType = 0,
+    targetCapabilities = 65,
+    targetName = "STM32F7X2",
+    boardName = "FLYWOOF722PROV2",
+    manufacturerId = "FLWO",
+    signature = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, },
+    mcuTypeId = 1,
+    configurationState = 64,
+    gyroSampleRateHz = 8000,
+    configurationProblems = 0,
+    spiRegisteredDeviceCount = 1,
+    i2cRegisteredDeviceCount = 1,
+}

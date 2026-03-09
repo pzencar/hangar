@@ -479,7 +479,7 @@ flightModeData:
          1:
             val: -100
          2:
-            val: 0
+            val: 100
          3:
             val: -100
          4:
@@ -1264,7 +1264,7 @@ screenData:
                      0:
                         type: Source
                         value: 
-                           source: tele(24)
+                           source: tele(22)
                      1:
                         type: Color
                         value: 
@@ -1288,7 +1288,7 @@ screenData:
                      0:
                         type: Source
                         value: 
-                           source: tele(12)
+                           source: tele(0)
                      1:
                         type: Color
                         value: 
@@ -1502,7 +1502,7 @@ topbarWidgetWidth:
       val: 5
    1:
       val: 1
-view: 0
+view: 2
 modelRegistrationID: ""
 customSwitches: 
    SW1:
@@ -1526,7 +1526,7 @@ customSwitches:
       type: 2POS
       group: 1
       start: START_PREVIOUS
-      state: 1
+      state: 0
       onColorLuaOverride: OFF
       offColorLuaOverride: OFF
       onColor: 
@@ -1542,7 +1542,7 @@ customSwitches:
       type: 2POS
       group: 1
       start: START_PREVIOUS
-      state: 0
+      state: 1
       onColorLuaOverride: OFF
       offColorLuaOverride: OFF
       onColor: 

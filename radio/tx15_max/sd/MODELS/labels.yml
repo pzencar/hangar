@@ -9,24 +9,24 @@ Models:
     bitmap: "edgetx.png"
     lastopen: 1769187542
   model1.yml:
-    hash: "22860000415ca455"
+    hash: "4a8900005a5c7068"
     name: "6S LIPO"
     mod0type: 5
     labels: ""
     bitmap: "elrs.png"
-    lastopen: 1769938954
+    lastopen: 1772108870
   model3.yml:
-    hash: "22860000415c5857"
+    hash: "23860000615cf445"
     name: "6S LION"
     mod0type: 5
     labels: ""
     bitmap: "elrs.png"
-    lastopen: 1769942709
+    lastopen: 1772354844
   model4.yml:
-    hash: "21860000455c6ea1"
+    hash: "23860000685cfa90"
     name: "3S LIPO"
     mod0type: 5
     labels: ""
     bitmap: "elrs.png"
-    lastopen: 1769943609
+    lastopen: 1772355771
 

@@ -1,4 +1,4 @@
-checksum: 56576
+checksum: 51921
 manuallyEdited: 0
 timezoneMinutes: 0
 ppmunit: 0
@@ -8,27 +8,27 @@ calib:
    LH:
       mid: 1006
       spanNeg: 665
-      spanPos: 717
+      spanPos: 713
    LV:
-      mid: 1001
-      spanNeg: 739
-      spanPos: 750
+      mid: 1016
+      spanNeg: 747
+      spanPos: 728
    RV:
-      mid: 1002
-      spanNeg: 761
-      spanPos: 780
+      mid: 1003
+      spanNeg: 765
+      spanPos: 779
    RH:
-      mid: 1065
-      spanNeg: 767
-      spanPos: 732
+      mid: 1068
+      spanNeg: 771
+      spanPos: 727
    P1:
       mid: 1033
       spanNeg: 1017
       spanPos: 999
    P2:
-      mid: 1027
-      spanNeg: 1011
-      spanPos: 1005
+      mid: 1044
+      spanNeg: 1028
+      spanPos: 988
 vBatWarn: 56
 txVoltageCalibration: -16
 backlightMode: backlight_mode_keys
@@ -82,7 +82,7 @@ speakerVolume: 17
 vBatMin: 50
 vBatMax: 84
 backlightBright: 77
-globalTimer: 123007
+globalTimer: 273119
 bluetoothBaudrate: 0
 bluetoothMode: OFF
 countryCode: 2

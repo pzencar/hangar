@@ -1,0 +1,16 @@
+return {
+    boardIdentifier = "F405",
+    hardwareRevision = 0,
+    boardType = 0,
+    targetCapabilities = 65,
+    targetName = "STM32F405",
+    boardName = "BETAFPVF405",
+    manufacturerId = "BEFH",
+    signature = { 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, },
+    mcuTypeId = 1,
+    configurationState = 64,
+    gyroSampleRateHz = 8000,
+    configurationProblems = 0,
+    spiRegisteredDeviceCount = 2,
+    i2cRegisteredDeviceCount = 0,
+}
