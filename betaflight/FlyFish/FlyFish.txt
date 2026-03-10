@@ -1,4 +1,4 @@
-Entering CLI Mode
+# 
 
 # dump all
 
@@ -476,7 +476,7 @@ set small_angle = 180
 set imu_process_denom = 2
 set auto_disarm_delay = 5
 set gyro_cal_on_first_arm = OFF
-set prearm_allow_rearm = OFF
+set prearm_allow_rearm = ON
 set gps_provider = UBLOX
 set gps_sbas_mode = NONE
 set gps_auto_config = ON
@@ -788,15 +788,15 @@ set throttle_boost_cutoff = 15
 set p_pitch = 68
 set i_pitch = 108
 set d_pitch = 38
-set f_pitch = 115
+set f_pitch = 102
 set p_roll = 56
 set i_roll = 140
 set d_roll = 31
-set f_roll = 115
+set f_roll = 102
 set p_yaw = 45
 set i_yaw = 125
 set d_yaw = 0
-set f_yaw = 115
+set f_yaw = 102
 set angle_p_gain = 50
 set angle_feedforward = 50
 set angle_feedforward_smoothing_ms = 80
@@ -905,15 +905,15 @@ set throttle_boost_cutoff = 15
 set p_pitch = 68
 set i_pitch = 118
 set d_pitch = 41
-set f_pitch = 110
+set f_pitch = 100
 set p_roll = 60
 set i_roll = 165
 set d_roll = 34
-set f_roll = 95
+set f_roll = 85
 set p_yaw = 45
 set i_yaw = 125
 set d_yaw = 0
-set f_yaw = 95
+set f_yaw = 85
 set angle_p_gain = 50
 set angle_feedforward = 50
 set angle_feedforward_smoothing_ms = 80
@@ -1270,19 +1270,19 @@ rateprofile 2
 # rateprofile 2
 set rateprofile_name = RP3
 set thr_mid = 0
-set thr_expo = 45
+set thr_expo = 25
 set thr_hover = 0
 set rates_type = ACTUAL
 set quickrates_rc_expo = OFF
-set roll_rc_rate = 4
-set pitch_rc_rate = 4
-set yaw_rc_rate = 4
-set roll_expo = 30
-set pitch_expo = 30
-set yaw_expo = 30
-set roll_srate = 55
-set pitch_srate = 55
-set yaw_srate = 55
+set roll_rc_rate = 9
+set pitch_rc_rate = 9
+set yaw_rc_rate = 9
+set roll_expo = 60
+set pitch_expo = 60
+set yaw_expo = 60
+set roll_srate = 56
+set pitch_srate = 56
+set yaw_srate = 56
 set throttle_limit_type = OFF
 set throttle_limit_percent = 100
 set roll_rate_limit = 1998
@@ -1314,7 +1314,7 @@ set pitch_rate_limit = 1998
 set yaw_rate_limit = 1998
 
 # restore original rateprofile selection
-rateprofile 1
+rateprofile 2
 
 # save configuration
 save
