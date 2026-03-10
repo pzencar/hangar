@@ -3,7 +3,7 @@
 # dump all
 
 # version
-# Betaflight / STM32F7X2 (F722) 2025.12.2 Mar 10 2026 / 10:02:26 (norevision) MSP API: 1.47
+# Betaflight / STM32F7X2 (F722) 2025.12.2 Mar 10 2026 / 21:13:09 (norevision) MSP API: 1.47
 
 # start the command batch
 batch start
@@ -844,6 +844,7 @@ set dterm_lpf2_static_hz = 0
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
+set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 420
 set vbat_sag_target = 385
 set pid_at_min_throttle = ON
@@ -963,6 +964,7 @@ set dterm_lpf2_static_hz = 0
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
+set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 420
 set vbat_sag_target = 355
 set pid_at_min_throttle = ON
@@ -1082,6 +1084,7 @@ set dterm_lpf2_static_hz = 150
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
+set vbat_sag_throttle_compensation = 0
 set vbat_sag_max_voltage = 420
 set vbat_sag_target = 350
 set pid_at_min_throttle = ON
@@ -1201,6 +1204,7 @@ set dterm_lpf2_static_hz = 150
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
+set vbat_sag_throttle_compensation = 0
 set vbat_sag_max_voltage = 420
 set vbat_sag_target = 350
 set pid_at_min_throttle = ON
