@@ -3,7 +3,7 @@
 # dump all
 
 # version
-# Betaflight / STM32F7X2 (F722) 2025.12.2 Mar 10 2026 / 21:13:09 (norevision) MSP API: 1.47
+# Betaflight / STM32F7X2 (F722) 2025.12.2 Mar 10 2026 / 22:26:08 (norevision) MSP API: 1.47
 
 # start the command batch
 batch start
@@ -846,7 +846,7 @@ set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
 set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 420
-set vbat_sag_target = 385
+set vbat_sag_target = 367
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 95
 set anti_gravity_cutoff_hz = 5
@@ -966,7 +966,7 @@ set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
 set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 420
-set vbat_sag_target = 355
+set vbat_sag_target = 370
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 95
 set anti_gravity_cutoff_hz = 5
@@ -1311,7 +1311,7 @@ set ez_landing_speed = 50
 set landing_disarm_threshold = 0
 
 # restore original profile selection
-profile 1
+profile 0
 
 rateprofile 0
 
