@@ -720,7 +720,7 @@ set osd_sys_warnings_pos = 341
 set osd_sys_vtx_temp_pos = 341
 set osd_sys_fan_speed_pos = 341
 set osd_stat_bitmask = 1074183870
-set osd_profile = 1
+set osd_profile = 3
 set osd_profile_1_name = -
 set osd_profile_2_name = -
 set osd_profile_3_name = -
@@ -866,25 +866,25 @@ set crash_recovery = OFF
 set iterm_rotation = OFF
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
-set iterm_relax_cutoff = 15
+set iterm_relax_cutoff = 10
 set iterm_windup = 80
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set p_pitch = 59
-set i_pitch = 84
-set d_pitch = 38
-set f_pitch = 60
-set p_roll = 49
-set i_roll = 98
-set d_roll = 31
-set f_roll = 60
+set p_pitch = 56
+set i_pitch = 92
+set d_pitch = 53
+set f_pitch = 50
+set p_roll = 48
+set i_roll = 108
+set d_roll = 49
+set f_roll = 50
 set p_yaw = 43
 set i_yaw = 130
 set d_yaw = 0
-set f_yaw = 60
+set f_yaw = 50
 set angle_p_gain = 50
 set angle_feedforward = 50
 set angle_feedforward_smoothing_ms = 80
@@ -901,8 +901,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_max_roll = 31
-set d_max_pitch = 38
+set d_max_roll = 49
+set d_max_pitch = 53
 set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
@@ -1315,7 +1315,7 @@ set ez_landing_speed = 50
 set landing_disarm_threshold = 0
 
 # restore original profile selection
-profile 1
+profile 0
 
 rateprofile 0
 
