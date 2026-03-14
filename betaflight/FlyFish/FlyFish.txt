@@ -3,7 +3,7 @@
 # dump all
 
 # version
-# Betaflight / STM32F7X2 (F722) 2025.12.2 Mar 11 2026 / 22:10:42 (norevision) MSP API: 1.47
+# Betaflight / STM32F7X2 (F722) 2025.12.2 Mar 14 2026 / 13:12:09 (norevision) MSP API: 1.47
 
 # start the command batch
 batch start
@@ -720,7 +720,7 @@ set osd_sys_warnings_pos = 341
 set osd_sys_vtx_temp_pos = 341
 set osd_sys_fan_speed_pos = 341
 set osd_stat_bitmask = 1074183870
-set osd_profile = 3
+set osd_profile = 1
 set osd_profile_1_name = -
 set osd_profile_2_name = -
 set osd_profile_3_name = -
@@ -846,7 +846,8 @@ set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
 set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 420
-set vbat_sag_target = 367
+set vbat_sag_min_voltage = 330
+set vbat_sag_target = 385
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 95
 set anti_gravity_cutoff_hz = 5
@@ -966,7 +967,8 @@ set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
 set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 420
-set vbat_sag_target = 370
+set vbat_sag_min_voltage = 285
+set vbat_sag_target = 375
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 95
 set anti_gravity_cutoff_hz = 5
@@ -1086,6 +1088,7 @@ set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
 set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 420
+set vbat_sag_min_voltage = 350
 set vbat_sag_target = 0
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 95
@@ -1206,6 +1209,7 @@ set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
 set vbat_sag_throttle_compensation = 0
 set vbat_sag_max_voltage = 420
+set vbat_sag_min_voltage = 350
 set vbat_sag_target = 350
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 80
@@ -1311,7 +1315,7 @@ set ez_landing_speed = 50
 set landing_disarm_threshold = 0
 
 # restore original profile selection
-profile 0
+profile 1
 
 rateprofile 0
 
