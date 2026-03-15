@@ -1,10 +1,9 @@
-# 
+Entering CLI Mode, type 'exit' to reboot, or 'h
 
 # dump all
 
 # version
-# Betaflight / STM32F7X2 (F722) 2025.12.2 Feb 21 2026 / 22:19:49 (79065c96b) MSP API: 1.47
-# config rev: e378347
+# Betaflight / STM32F7X2 (F722) 2025.12.2 Mar 15 2026 / 19:27:38 (norevision) MSP API: 1.47
 
 # start the command batch
 batch start
@@ -26,6 +25,23 @@ resource MOTOR 5 C08
 resource MOTOR 6 C09
 resource MOTOR 7 B06
 resource MOTOR 8 B07
+resource SERVO 1 NONE
+resource SERVO 2 NONE
+resource SERVO 3 NONE
+resource SERVO 4 NONE
+resource SERVO 5 NONE
+resource SERVO 6 NONE
+resource SERVO 7 NONE
+resource SERVO 8 NONE
+resource PPM 1 NONE
+resource PWM 1 NONE
+resource PWM 2 NONE
+resource PWM 3 NONE
+resource PWM 4 NONE
+resource PWM 5 NONE
+resource PWM 6 NONE
+resource PWM 7 NONE
+resource PWM 8 NONE
 resource SERIAL_TX 1 A09
 resource SERIAL_TX 2 A02
 resource SERIAL_TX 3 B10
@@ -49,6 +65,8 @@ resource I2C_SDA 4 NONE
 resource LED 1 C15
 resource LED 2 NONE
 resource LED 3 NONE
+resource RX_BIND 1 NONE
+resource RX_BIND_PLUG 1 NONE
 resource SPI_SCK 1 A05
 resource SPI_SCK 2 B13
 resource SPI_SCK 3 C10
@@ -220,6 +238,20 @@ mixer QUADX
 mmix reset
 
 
+# servo
+servo 0 1000 2000 1500 100 -1
+servo 1 1000 2000 1500 100 -1
+servo 2 1000 2000 1500 100 -1
+servo 3 1000 2000 1500 100 -1
+servo 4 1000 2000 1500 100 -1
+servo 5 1000 2000 1500 100 -1
+servo 6 1000 2000 1500 100 -1
+servo 7 1000 2000 1500 100 -1
+
+# servo mixer
+smix reset
+
+
 # beeper
 beeper GYRO_CALIBRATED
 beeper RX_LOST
@@ -312,6 +344,25 @@ rxrange 1 1000 2000
 rxrange 2 1000 2000
 rxrange 3 1000 2000
 
+# vtxtable
+vtxtable bands 0
+vtxtable channels 0
+vtxtable powerlevels 0
+vtxtable powervalues
+vtxtable powerlabels
+
+# vtx
+vtx 0 0 0 0 0 900 900
+vtx 1 0 0 0 0 900 900
+vtx 2 0 0 0 0 900 900
+vtx 3 0 0 0 0 900 900
+vtx 4 0 0 0 0 900 900
+vtx 5 0 0 0 0 900 900
+vtx 6 0 0 0 0 900 900
+vtx 7 0 0 0 0 900 900
+vtx 8 0 0 0 0 900 900
+vtx 9 0 0 0 0 900 900
+
 # rxfail
 rxfail 0 a
 rxfail 1 a
@@ -389,6 +440,11 @@ set fpv_mix_degrees = 0
 set max_aux_channels = 14
 set serialrx_provider = CRSF
 set serialrx_inverted = OFF
+set spektrum_sat_bind = 0
+set spektrum_sat_bind_autoreset = ON
+set srxl2_unit_id = 1
+set srxl2_baud_fast = ON
+set sbus_baud_fast = OFF
 set crsf_use_negotiated_baud = OFF
 set airmode_start_throttle_percent = 25
 set rx_min_usec = 885
@@ -400,6 +456,7 @@ set adc_device = 3
 set adc_vrefint_calibration = 0
 set adc_tempsensor_calibration30 = 0
 set adc_tempsensor_calibration110 = 0
+set input_filtering_mode = OFF
 set blackbox_sample_rate = 1/4
 set blackbox_device = SPIFLASH
 set blackbox_disable_pids = OFF
@@ -414,6 +471,7 @@ set blackbox_disable_acc = OFF
 set blackbox_disable_attitude = OFF
 set blackbox_disable_debug = OFF
 set blackbox_disable_motors = OFF
+set blackbox_disable_servos = OFF
 set blackbox_disable_rpm = OFF
 set blackbox_disable_gps = ON
 set blackbox_mode = NORMAL
@@ -446,6 +504,7 @@ set failsafe_stick_threshold = 30
 set align_board_roll = 0
 set align_board_pitch = 0
 set align_board_yaw = 0
+set gimbal_mode = NORMAL
 set bat_capacity = 0
 set vbat_max_cell_voltage = 440
 set vbat_full_cell_voltage = 410
@@ -488,6 +547,11 @@ set 3d_deadband_throttle = 50
 set 3d_limit_low = 1000
 set 3d_limit_high = 2000
 set 3d_switched_mode = OFF
+set servo_center_pulse = 1500
+set servo_pwm_rate = 50
+set servo_lowpass_hz = 0
+set tri_unarmed_servo = ON
+set channel_forwarding_start = 4
 set reboot_character = 82
 set serial_update_rate_hz = 100
 set imu_dcm_kp = 2500
@@ -545,6 +609,11 @@ set simplified_gyro_filter = ON
 set simplified_gyro_filter_multiplier = 150
 set tlm_inverted = OFF
 set tlm_halfduplex = ON
+set frsky_default_lat = 0
+set frsky_default_long = 0
+set frsky_gps_format = 0
+set frsky_unit = METRIC
+set frsky_vfas_precision = 0
 set hott_alarm_int = 5
 set pid_in_tlm = OFF
 set report_cell_voltage = OFF
@@ -692,6 +761,14 @@ set rate_6pos_switch = OFF
 set cpu_overclock = OFF
 set pwr_on_arm_grace = 5
 set enable_stick_arming = OFF
+set vtx_band = 0
+set vtx_channel = 0
+set vtx_power = 0
+set vtx_low_power_disarm = OFF
+set vtx_softserial_alt = OFF
+set vtx_freq = 0
+set vtx_pit_mode_freq = 0
+set vtx_halfduplex = ON
 set vcd_video_system = HD
 set displayport_msp_col_adjust = 0
 set displayport_msp_row_adjust = 0
@@ -769,7 +846,7 @@ set box_user_4_name = -
 profile 0
 
 # profile 0
-set profile_name = -
+set profile_name = 4S
 set dterm_lpf1_dyn_min_hz = 90
 set dterm_lpf1_dyn_max_hz = 180
 set dterm_lpf1_dyn_expo = 7
@@ -780,6 +857,10 @@ set dterm_lpf2_static_hz = 0
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
+set vbat_sag_throttle_compensation = 100
+set vbat_sag_max_voltage = 435
+set vbat_sag_min_voltage = 350
+set vbat_sag_target = 385
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 75
 set anti_gravity_cutoff_hz = 5
@@ -886,19 +967,23 @@ set landing_disarm_threshold = 0
 profile 1
 
 # profile 1
-set profile_name = -
-set dterm_lpf1_dyn_min_hz = 75
-set dterm_lpf1_dyn_max_hz = 150
-set dterm_lpf1_dyn_expo = 5
-set dterm_lpf1_type = PT1
-set dterm_lpf1_static_hz = 75
+set profile_name = 3S
+set dterm_lpf1_dyn_min_hz = 90
+set dterm_lpf1_dyn_max_hz = 180
+set dterm_lpf1_dyn_expo = 7
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_static_hz = 90
 set dterm_lpf2_type = PT1
-set dterm_lpf2_static_hz = 150
+set dterm_lpf2_static_hz = 0
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
+set vbat_sag_throttle_compensation = 100
+set vbat_sag_max_voltage = 435
+set vbat_sag_min_voltage = 350
+set vbat_sag_target = 500
 set pid_at_min_throttle = ON
-set anti_gravity_gain = 80
+set anti_gravity_gain = 75
 set anti_gravity_cutoff_hz = 5
 set anti_gravity_p_gain = 100
 set acc_limit_yaw = 0
@@ -915,25 +1000,25 @@ set crash_recovery = OFF
 set iterm_rotation = OFF
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
-set iterm_relax_cutoff = 15
+set iterm_relax_cutoff = 5
 set iterm_windup = 80
-set pidsum_limit = 500
-set pidsum_limit_yaw = 400
-set yaw_lowpass_hz = 100
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set p_pitch = 47
-set i_pitch = 84
-set d_pitch = 34
-set f_pitch = 125
-set p_roll = 45
-set i_roll = 80
-set d_roll = 30
-set f_roll = 120
-set p_yaw = 45
-set i_yaw = 80
+set p_pitch = 72
+set i_pitch = 107
+set d_pitch = 60
+set f_pitch = 43
+set p_roll = 57
+set i_roll = 101
+set d_roll = 50
+set f_roll = 36
+set p_yaw = 57
+set i_yaw = 101
 set d_yaw = 0
-set f_yaw = 120
+set f_yaw = 36
 set angle_p_gain = 50
 set angle_feedforward = 50
 set angle_feedforward_smoothing_ms = 80
@@ -950,8 +1035,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_max_roll = 40
-set d_max_pitch = 46
+set d_max_roll = 50
+set d_max_pitch = 60
 set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
@@ -967,18 +1052,18 @@ set transient_throttle_limit = 0
 set feedforward_transition = 0
 set feedforward_averaging = 2_POINT
 set feedforward_smooth_factor = 65
-set feedforward_jitter_factor = 7
+set feedforward_jitter_factor = 8
 set feedforward_boost = 15
 set feedforward_max_rate_limit = 90
 set feedforward_yaw_hold_gain = 15
 set feedforward_yaw_hold_time = 100
-set dyn_idle_min_rpm = 0
+set dyn_idle_min_rpm = 40
 set dyn_idle_p_gain = 50
 set dyn_idle_i_gain = 50
 set dyn_idle_d_gain = 50
 set dyn_idle_max_increase = 150
 set level_race_mode = OFF
-set simplified_pids_mode = RPY
+set simplified_pids_mode = OFF
 set simplified_master_multiplier = 100
 set simplified_i_gain = 100
 set simplified_d_gain = 100
@@ -988,7 +1073,7 @@ set simplified_feedforward_gain = 100
 set simplified_pitch_d_gain = 100
 set simplified_pitch_pi_gain = 100
 set simplified_dterm_filter = ON
-set simplified_dterm_filter_multiplier = 100
+set simplified_dterm_filter_multiplier = 120
 set tpa_mode = D
 set tpa_rate = 65
 set tpa_breakpoint = 1350
@@ -1014,6 +1099,10 @@ set dterm_lpf2_static_hz = 150
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
+set vbat_sag_throttle_compensation = 0
+set vbat_sag_max_voltage = 420
+set vbat_sag_min_voltage = 350
+set vbat_sag_target = 0
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 80
 set anti_gravity_cutoff_hz = 5
@@ -1131,6 +1220,10 @@ set dterm_lpf2_static_hz = 150
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
+set vbat_sag_throttle_compensation = 0
+set vbat_sag_max_voltage = 420
+set vbat_sag_min_voltage = 350
+set vbat_sag_target = 0
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 80
 set anti_gravity_cutoff_hz = 5
