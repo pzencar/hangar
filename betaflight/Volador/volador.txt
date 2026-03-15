@@ -1,4 +1,4 @@
-
+# 
 
 # dump all
 
@@ -246,8 +246,8 @@ beeper CAM_CONNECTION_OPEN
 beeper CAM_CONNECTION_CLOSE
 
 # beacon
-beacon -RX_LOST
-beacon -RX_SET
+beacon RX_LOST
+beacon RX_SET
 
 # map
 map AETR1234
@@ -337,7 +337,7 @@ set gyro_hardware_lpf = NORMAL
 set gyro_lpf1_type = PT1
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_type = PT1
-set gyro_lpf2_static_hz = 500
+set gyro_lpf2_static_hz = 750
 set gyro_notch1_hz = 0
 set gyro_notch1_cutoff = 0
 set gyro_notch2_hz = 0
@@ -351,10 +351,10 @@ set yaw_spin_threshold = 1950
 set gyro_enabled_bitmask = 1
 set gyro_1_enabled = ON
 set gyro_2_enabled = OFF
-set dyn_notch_count = 1
-set dyn_notch_q = 500
-set dyn_notch_min_hz = 100
-set dyn_notch_max_hz = 600
+set dyn_notch_count = 2
+set dyn_notch_q = 600
+set dyn_notch_min_hz = 160
+set dyn_notch_max_hz = 470
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 500
 set gyro_lpf1_dyn_expo = 5
@@ -468,7 +468,7 @@ set vbat_duration_for_critical = 0
 set vbat_scale = 110
 set vbat_divider = 10
 set vbat_multiplier = 1
-set ibata_scale = 170
+set ibata_scale = 510
 set ibata_offset = 0
 set ibatv_scale = 0
 set ibatv_offset = 0
@@ -496,7 +496,7 @@ set small_angle = 180
 set imu_process_denom = 2
 set auto_disarm_delay = 5
 set gyro_cal_on_first_arm = OFF
-set prearm_allow_rearm = OFF
+set prearm_allow_rearm = ON
 set gps_provider = UBLOX
 set gps_sbas_mode = NONE
 set gps_auto_config = ON
@@ -542,7 +542,7 @@ set runaway_takeoff_prevention = ON
 set runaway_takeoff_deactivate_delay = 500
 set runaway_takeoff_deactivate_throttle_percent = 20
 set simplified_gyro_filter = ON
-set simplified_gyro_filter_multiplier = 100
+set simplified_gyro_filter_multiplier = 150
 set tlm_inverted = OFF
 set tlm_halfduplex = ON
 set hott_alarm_int = 5
@@ -670,7 +670,7 @@ set osd_sys_warnings_pos = 341
 set osd_sys_vtx_temp_pos = 341
 set osd_sys_fan_speed_pos = 341
 set osd_stat_bitmask = 1074183870
-set osd_profile = 1
+set osd_profile = 3
 set osd_profile_1_name = -
 set osd_profile_2_name = -
 set osd_profile_3_name = -
@@ -731,10 +731,10 @@ set cpu_late_limit_permille = 10
 set serialmsp_halfduplex = OFF
 set timezone_offset_minutes = 0
 set rpm_filter_harmonics = 3
-set rpm_filter_weights = 100,100,100
+set rpm_filter_weights = 100,30,30
 set rpm_filter_q = 500
-set rpm_filter_min_hz = 100
-set rpm_filter_fade_range_hz = 50
+set rpm_filter_min_hz = 145
+set rpm_filter_fade_range_hz = 40
 set rpm_filter_lpf_hz = 150
 set stats_min_armed_time_s = -1
 set stats_total_flights = 0
@@ -770,18 +770,18 @@ profile 0
 
 # profile 0
 set profile_name = -
-set dterm_lpf1_dyn_min_hz = 75
-set dterm_lpf1_dyn_max_hz = 150
+set dterm_lpf1_dyn_min_hz = 90
+set dterm_lpf1_dyn_max_hz = 180
 set dterm_lpf1_dyn_expo = 7
 set dterm_lpf1_type = BIQUAD
-set dterm_lpf1_static_hz = 75
+set dterm_lpf1_static_hz = 90
 set dterm_lpf2_type = PT1
 set dterm_lpf2_static_hz = 0
 set dterm_notch_hz = 0
 set dterm_notch_cutoff = 0
 set vbat_sag_compensation = 0
 set pid_at_min_throttle = ON
-set anti_gravity_gain = 80
+set anti_gravity_gain = 75
 set anti_gravity_cutoff_hz = 5
 set anti_gravity_p_gain = 100
 set acc_limit_yaw = 0
@@ -798,25 +798,25 @@ set crash_recovery = OFF
 set iterm_rotation = OFF
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
-set iterm_relax_cutoff = 15
+set iterm_relax_cutoff = 5
 set iterm_windup = 80
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
 set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set p_pitch = 75
-set i_pitch = 105
-set d_pitch = 54
-set f_pitch = 65
-set p_roll = 60
-set i_roll = 95
-set d_roll = 44
-set f_roll = 50
-set p_yaw = 60
-set i_yaw = 95
+set p_pitch = 72
+set i_pitch = 107
+set d_pitch = 60
+set f_pitch = 43
+set p_roll = 57
+set i_roll = 101
+set d_roll = 50
+set f_roll = 36
+set p_yaw = 57
+set i_yaw = 101
 set d_yaw = 0
-set f_yaw = 50
+set f_yaw = 36
 set angle_p_gain = 50
 set angle_feedforward = 50
 set angle_feedforward_smoothing_ms = 80
@@ -833,8 +833,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_max_roll = 44
-set d_max_pitch = 54
+set d_max_roll = 50
+set d_max_pitch = 60
 set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
@@ -871,7 +871,7 @@ set simplified_feedforward_gain = 100
 set simplified_pitch_d_gain = 100
 set simplified_pitch_pi_gain = 100
 set simplified_dterm_filter = ON
-set simplified_dterm_filter_multiplier = 100
+set simplified_dterm_filter_multiplier = 120
 set tpa_mode = D
 set tpa_rate = 65
 set tpa_breakpoint = 1350
@@ -1290,19 +1290,19 @@ rateprofile 2
 # rateprofile 2
 set rateprofile_name = RP3
 set thr_mid = 0
-set thr_expo = 45
+set thr_expo = 25
 set thr_hover = 0
 set rates_type = ACTUAL
 set quickrates_rc_expo = OFF
-set roll_rc_rate = 4
-set pitch_rc_rate = 4
-set yaw_rc_rate = 4
-set roll_expo = 30
-set pitch_expo = 30
-set yaw_expo = 30
-set roll_srate = 55
-set pitch_srate = 55
-set yaw_srate = 55
+set roll_rc_rate = 9
+set pitch_rc_rate = 9
+set yaw_rc_rate = 9
+set roll_expo = 60
+set pitch_expo = 60
+set yaw_expo = 60
+set roll_srate = 56
+set pitch_srate = 56
+set yaw_srate = 56
 set throttle_limit_type = OFF
 set throttle_limit_percent = 100
 set roll_rate_limit = 1998
@@ -1334,7 +1334,7 @@ set pitch_rate_limit = 1998
 set yaw_rate_limit = 1998
 
 # restore original rateprofile selection
-rateprofile 1
+rateprofile 2
 
 # save configuration
 save
