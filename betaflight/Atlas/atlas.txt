@@ -13,7 +13,7 @@ manufacturer_id GEPR
 mcu_id 003f00423235510e30383432
 signature 
 
-# name: Pavo
+# name: Atlas
 
 # resources
 resource BEEPER 1 C15
@@ -806,7 +806,7 @@ set stats_total_flights = 0
 set stats_total_time_s = 0
 set stats_total_dist_m = 0
 set stats_save_move_limit = 20
-set craft_name = Pavo
+set craft_name = Atlas
 set pilot_name = -
 set altitude_source = DEFAULT
 set altitude_prefer_baro = 100
@@ -848,7 +848,7 @@ set vbat_sag_compensation = 0
 set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 435
 set vbat_sag_min_voltage = 350
-set vbat_sag_target = 385
+set vbat_sag_target = 360
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 60
 set anti_gravity_cutoff_hz = 5
@@ -867,7 +867,7 @@ set crash_recovery = OFF
 set iterm_rotation = OFF
 set iterm_relax = RP
 set iterm_relax_type = SETPOINT
-set iterm_relax_cutoff = 15
+set iterm_relax_cutoff = 9
 set iterm_windup = 80
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
@@ -969,7 +969,7 @@ set vbat_sag_compensation = 0
 set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 435
 set vbat_sag_min_voltage = 350
-set vbat_sag_target = 450
+set vbat_sag_target = 400
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 60
 set anti_gravity_cutoff_hz = 5
@@ -1316,7 +1316,7 @@ set ez_landing_speed = 50
 set landing_disarm_threshold = 0
 
 # restore original profile selection
-profile 1
+profile 0
 
 rateprofile 0
 
