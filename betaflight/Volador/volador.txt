@@ -1,4 +1,4 @@
-Entering CLI Mode, type 'exit' to r
+# 
 
 # dump all
 
@@ -739,7 +739,7 @@ set osd_sys_warnings_pos = 341
 set osd_sys_vtx_temp_pos = 341
 set osd_sys_fan_speed_pos = 341
 set osd_stat_bitmask = 1074183870
-set osd_profile = 3
+set osd_profile = 1
 set osd_profile_1_name = -
 set osd_profile_2_name = -
 set osd_profile_3_name = -
@@ -860,7 +860,7 @@ set vbat_sag_compensation = 0
 set vbat_sag_throttle_compensation = 100
 set vbat_sag_max_voltage = 435
 set vbat_sag_min_voltage = 350
-set vbat_sag_target = 385
+set vbat_sag_target = 387
 set pid_at_min_throttle = ON
 set anti_gravity_gain = 75
 set anti_gravity_cutoff_hz = 5
@@ -886,15 +886,15 @@ set pidsum_limit_yaw = 1000
 set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set p_pitch = 72
+set p_pitch = 68
 set i_pitch = 107
-set d_pitch = 60
+set d_pitch = 68
 set f_pitch = 43
-set p_roll = 57
+set p_roll = 54
 set i_roll = 101
-set d_roll = 50
+set d_roll = 58
 set f_roll = 36
-set p_yaw = 57
+set p_yaw = 54
 set i_yaw = 101
 set d_yaw = 0
 set f_yaw = 36
@@ -914,8 +914,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_max_roll = 50
-set d_max_pitch = 60
+set d_max_roll = 58
+set d_max_pitch = 68
 set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
