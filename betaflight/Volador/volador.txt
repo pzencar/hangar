@@ -1,4 +1,4 @@
-# 
+Entering CLI Mode, type 'exit' to 
 
 # dump all
 
@@ -887,15 +887,15 @@ set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
 set p_pitch = 74
-set i_pitch = 107
+set i_pitch = 74
 set d_pitch = 76
 set f_pitch = 36
 set p_roll = 60
-set i_roll = 101
+set i_roll = 70
 set d_roll = 68
 set f_roll = 36
 set p_yaw = 54
-set i_yaw = 101
+set i_yaw = 70
 set d_yaw = 0
 set f_yaw = 36
 set angle_p_gain = 50

@@ -1,4 +1,4 @@
-Entering CLI Mode, type 'e
+Entering CLI Mode, type 'exit' to reboot, or 'hel
 
 # dump all
 
@@ -875,15 +875,15 @@ set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
 set p_pitch = 67
-set i_pitch = 125
+set i_pitch = 83
 set d_pitch = 87
 set f_pitch = 30
 set p_roll = 60
-set i_roll = 115
+set i_roll = 75
 set d_roll = 82
 set f_roll = 30
 set p_yaw = 48
-set i_yaw = 98
+set i_yaw = 75
 set d_yaw = 0
 set f_yaw = 30
 set angle_p_gain = 50
@@ -943,7 +943,7 @@ set simplified_dterm_filter = ON
 set simplified_dterm_filter_multiplier = 120
 set tpa_mode = PD
 set tpa_rate = 65
-set tpa_breakpoint = 1350
+set tpa_breakpoint = 1450
 set tpa_low_rate = 20
 set tpa_low_breakpoint = 1050
 set tpa_low_always = OFF
@@ -996,15 +996,15 @@ set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
 set p_pitch = 78
-set i_pitch = 126
+set i_pitch = 88
 set d_pitch = 95
 set f_pitch = 30
 set p_roll = 71
-set i_roll = 116
+set i_roll = 80
 set d_roll = 91
 set f_roll = 30
 set p_yaw = 65
-set i_yaw = 101
+set i_yaw = 80
 set d_yaw = 0
 set f_yaw = 30
 set angle_p_gain = 50
@@ -1064,7 +1064,7 @@ set simplified_dterm_filter = ON
 set simplified_dterm_filter_multiplier = 120
 set tpa_mode = PD
 set tpa_rate = 65
-set tpa_breakpoint = 1350
+set tpa_breakpoint = 1500
 set tpa_low_rate = 20
 set tpa_low_breakpoint = 1050
 set tpa_low_always = OFF
