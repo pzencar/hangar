@@ -1,4 +1,4 @@
-Entering CLI Mode, type 'exi
+# 
 
 # dump all
 
@@ -209,6 +209,7 @@ feature -RX_SPI
 feature -ESC_SENSOR
 feature -ANTI_GRAVITY
 feature RX_SERIAL
+feature GPS
 feature TELEMETRY
 feature OSD
 feature ANTI_GRAVITY
@@ -218,7 +219,7 @@ serial VCP 1 115200 57600 0 115200
 serial UART1 131073 115200 57600 0 115200
 serial UART2 64 115200 57600 0 115200
 serial UART3 0 115200 57600 0 115200
-serial UART4 0 115200 57600 0 115200
+serial UART4 2 115200 57600 0 115200
 serial UART5 0 115200 57600 0 115200
 
 # mixer
@@ -276,21 +277,21 @@ map AETR1234
 # aux
 aux 0 0 0 1500 2050 0 0
 aux 1 36 1 1500 2050 0 0
-aux 2 35 1 1125 1250 0 0
-aux 3 35 1 1375 1500 0 0
-aux 4 35 1 1625 1750 0 0
-aux 5 35 1 1875 2050 0 0
-aux 6 3 2 1500 2050 0 0
-aux 7 11 2 1500 2050 0 0
-aux 8 28 2 1250 1500 0 0
-aux 9 28 2 1750 2050 0 0
-aux 10 1 2 1125 1250 0 0
-aux 11 1 2 1375 1500 0 0
-aux 12 1 2 1625 1750 0 0
-aux 13 1 2 1875 2050 0 0
-aux 14 13 3 1500 2050 0 0
-aux 15 0 0 900 900 0 0
-aux 16 0 0 900 900 0 0
+aux 2 46 1 1250 1500 0 0
+aux 3 46 1 1750 2050 0 0
+aux 4 35 1 1125 1250 0 0
+aux 5 35 1 1375 1500 0 0
+aux 6 35 1 1625 1750 0 0
+aux 7 35 1 1875 2050 0 0
+aux 8 3 2 1500 2050 0 0
+aux 9 11 2 1500 2050 0 0
+aux 10 28 2 1250 1500 0 0
+aux 11 28 2 1750 2050 0 0
+aux 12 1 2 1125 1250 0 0
+aux 13 1 2 1375 1500 0 0
+aux 14 1 2 1625 1750 0 0
+aux 15 1 2 1875 2050 0 0
+aux 16 13 3 1500 2050 0 0
 aux 17 0 0 900 900 0 0
 aux 18 0 0 900 900 0 0
 aux 19 0 0 900 900 0 0
@@ -484,7 +485,7 @@ set failsafe_landing_time = 60
 set failsafe_throttle = 1000
 set failsafe_switch_mode = STAGE1
 set failsafe_throttle_low_delay = 100
-set failsafe_procedure = DROP
+set failsafe_procedure = GPS-RESCUE
 set failsafe_recovery_delay = 5
 set failsafe_stick_threshold = 30
 set align_board_roll = 0
@@ -574,8 +575,8 @@ set gps_rescue_descent_dist = 20
 set gps_rescue_descend_rate = 150
 set gps_rescue_disarm_threshold = 30
 set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
-set gps_rescue_min_sats = 8
-set gps_rescue_allow_arming_without_fix = OFF
+set gps_rescue_min_sats = 5
+set gps_rescue_allow_arming_without_fix = ON
 set gps_rescue_velocity_p = 8
 set gps_rescue_velocity_i = 40
 set gps_rescue_velocity_d = 12
@@ -725,7 +726,7 @@ set osd_sys_warnings_pos = 341
 set osd_sys_vtx_temp_pos = 341
 set osd_sys_fan_speed_pos = 341
 set osd_stat_bitmask = 1074183870
-set osd_profile = 1
+set osd_profile = 3
 set osd_profile_1_name = -
 set osd_profile_2_name = -
 set osd_profile_3_name = -
@@ -813,7 +814,7 @@ set altitude_prefer_baro = 100
 set altitude_lpf = 300
 set altitude_d_lpf = 100
 set ap_landing_altitude_m = 4
-set ap_hover_throttle = 1275
+set ap_hover_throttle = 1350
 set ap_throttle_min = 1100
 set ap_throttle_max = 1700
 set ap_altitude_p = 15
@@ -875,15 +876,15 @@ set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
 set p_pitch = 51
-set i_pitch = 45
-set d_pitch = 63
+set i_pitch = 38
+set d_pitch = 60
 set f_pitch = 116
 set p_roll = 46
-set i_roll = 42
-set d_roll = 60
+set i_roll = 35
+set d_roll = 57
 set f_roll = 110
 set p_yaw = 46
-set i_yaw = 42
+set i_yaw = 33
 set d_yaw = 0
 set f_yaw = 110
 set angle_p_gain = 50
@@ -902,8 +903,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_max_roll = 60
-set d_max_pitch = 63
+set d_max_roll = 57
+set d_max_pitch = 60
 set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
@@ -1150,7 +1151,7 @@ set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
 set motor_output_limit = 100
-set auto_profile_cell_count = 0
+set auto_profile_cell_count = -1
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = ON
 set launch_trigger_throttle_percent = 20
@@ -1271,7 +1272,7 @@ set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
 set motor_output_limit = 100
-set auto_profile_cell_count = 0
+set auto_profile_cell_count = -1
 set launch_control_mode = PITCHONLY
 set launch_trigger_allow_reset = ON
 set launch_trigger_throttle_percent = 20
@@ -1316,7 +1317,7 @@ set ez_landing_speed = 50
 set landing_disarm_threshold = 0
 
 # restore original profile selection
-profile 2
+profile 3
 
 rateprofile 0
 
