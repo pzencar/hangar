@@ -1,4 +1,4 @@
-# 
+Entering CLI Mode, typ
 
 # dump all
 
