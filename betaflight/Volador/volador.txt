@@ -1,4 +1,4 @@
-# 
+Entering CLI Mode, type 'exit' to reboot, or 'hel
 
 # dump all
 
@@ -886,18 +886,18 @@ set pidsum_limit_yaw = 1000
 set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set p_pitch = 78
-set i_pitch = 141
-set d_pitch = 57
-set f_pitch = 119
-set p_roll = 75
-set i_roll = 134
-set d_roll = 50
-set f_roll = 115
-set p_yaw = 75
-set i_yaw = 134
+set p_pitch = 77
+set i_pitch = 138
+set d_pitch = 56
+set f_pitch = 123
+set p_roll = 74
+set i_roll = 132
+set d_roll = 49
+set f_roll = 118
+set p_yaw = 74
+set i_yaw = 132
 set d_yaw = 0
-set f_yaw = 115
+set f_yaw = 118
 set angle_p_gain = 50
 set angle_feedforward = 50
 set angle_feedforward_smoothing_ms = 80
@@ -914,8 +914,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_max_roll = 58
-set d_max_pitch = 67
+set d_max_roll = 57
+set d_max_pitch = 66
 set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
@@ -943,10 +943,10 @@ set dyn_idle_d_gain = 50
 set dyn_idle_max_increase = 150
 set level_race_mode = OFF
 set simplified_pids_mode = RPY
-set simplified_master_multiplier = 160
+set simplified_master_multiplier = 165
 set simplified_i_gain = 100
-set simplified_d_gain = 105
-set simplified_pi_gain = 105
+set simplified_d_gain = 100
+set simplified_pi_gain = 100
 set simplified_d_max_gain = 50
 set simplified_feedforward_gain = 60
 set simplified_pitch_d_gain = 100
@@ -1007,18 +1007,18 @@ set pidsum_limit_yaw = 1000
 set yaw_lowpass_hz = 0
 set throttle_boost = 5
 set throttle_boost_cutoff = 15
-set p_pitch = 78
-set i_pitch = 141
-set d_pitch = 57
-set f_pitch = 119
-set p_roll = 75
-set i_roll = 134
-set d_roll = 50
-set f_roll = 115
-set p_yaw = 75
-set i_yaw = 134
+set p_pitch = 77
+set i_pitch = 138
+set d_pitch = 56
+set f_pitch = 123
+set p_roll = 74
+set i_roll = 132
+set d_roll = 49
+set f_roll = 118
+set p_yaw = 74
+set i_yaw = 132
 set d_yaw = 0
-set f_yaw = 115
+set f_yaw = 118
 set angle_p_gain = 50
 set angle_feedforward = 50
 set angle_feedforward_smoothing_ms = 80
@@ -1035,8 +1035,8 @@ set abs_control_error_limit = 20
 set abs_control_cutoff = 11
 set use_integrated_yaw = OFF
 set integrated_yaw_relax = 200
-set d_max_roll = 58
-set d_max_pitch = 67
+set d_max_roll = 57
+set d_max_pitch = 66
 set d_max_yaw = 0
 set d_max_gain = 37
 set d_max_advance = 20
@@ -1064,10 +1064,10 @@ set dyn_idle_d_gain = 50
 set dyn_idle_max_increase = 150
 set level_race_mode = OFF
 set simplified_pids_mode = RPY
-set simplified_master_multiplier = 160
+set simplified_master_multiplier = 165
 set simplified_i_gain = 100
-set simplified_d_gain = 105
-set simplified_pi_gain = 105
+set simplified_d_gain = 100
+set simplified_pi_gain = 100
 set simplified_d_max_gain = 50
 set simplified_feedforward_gain = 60
 set simplified_pitch_d_gain = 100
@@ -1328,7 +1328,7 @@ set ez_landing_speed = 50
 set landing_disarm_threshold = 0
 
 # restore original profile selection
-profile 0
+profile 1
 
 rateprofile 0
 
