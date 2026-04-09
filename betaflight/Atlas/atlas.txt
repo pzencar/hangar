@@ -450,7 +450,7 @@ set blackbox_disable_pids = OFF
 set blackbox_disable_rc = OFF
 set blackbox_disable_setpoint = OFF
 set blackbox_disable_bat = OFF
-set blackbox_disable_alt = ON
+set blackbox_disable_alt = OFF
 set blackbox_disable_rssi = ON
 set blackbox_disable_gyro = OFF
 set blackbox_disable_gyrounfilt = OFF
@@ -458,9 +458,9 @@ set blackbox_disable_acc = OFF
 set blackbox_disable_attitude = OFF
 set blackbox_disable_debug = OFF
 set blackbox_disable_motors = OFF
-set blackbox_disable_servos = OFF
+set blackbox_disable_servos = ON
 set blackbox_disable_rpm = OFF
-set blackbox_disable_gps = ON
+set blackbox_disable_gps = OFF
 set blackbox_mode = NORMAL
 set blackbox_high_resolution = OFF
 set max_throttle = 2000
@@ -1317,7 +1317,7 @@ set ez_landing_speed = 50
 set landing_disarm_threshold = 0
 
 # restore original profile selection
-profile 1
+profile 0
 
 rateprofile 0
 
